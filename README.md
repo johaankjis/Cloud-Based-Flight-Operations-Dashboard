@@ -220,7 +220,7 @@ Components use Tailwind CSS for styling. Modify styles by:
 ### Next.js Configuration
 
 The `next.config.mjs` file includes:
-- TypeScript build configuration (ignores build errors in builds)
+- TypeScript build configuration (bypasses TypeScript errors during build)
 - Image optimization settings (unoptimized for flexibility)
 
 ### TypeScript Configuration
@@ -249,8 +249,8 @@ The application can be deployed to any platform that supports Next.js:
 ## 📈 Performance
 
 The dashboard is optimized for performance with:
-- React Server Components for efficient rendering
-- Static generation where possible
+- Next.js App Router for modern routing architecture
+- Client-side data generation for demonstration purposes
 - Component lazy loading
 - Optimized bundle size
 - Efficient re-rendering with React hooks
