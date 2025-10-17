@@ -45,7 +45,7 @@ A real-time flight operations monitoring and analytics dashboard built with Next
 ## 🛠️ Technology Stack
 
 ### Frontend Framework
-- **Next.js 15.2.4**: React framework with server-side rendering
+- **Next.js 15.2.4**: React framework with App Router and React Server Components
 - **React 19**: Latest React features and performance improvements
 - **TypeScript 5**: Type-safe development experience
 
@@ -206,8 +206,8 @@ The application supports dark and light themes. Theme configuration can be modif
 
 Components use Tailwind CSS for styling. Modify styles by:
 - Editing utility classes in component files
-- Updating Tailwind configuration in `tailwind.config.js` (if present)
 - Customizing CSS variables in `app/globals.css`
+- Using Tailwind's PostCSS configuration in `postcss.config.mjs`
 
 ### Adding New Features
 
@@ -220,8 +220,8 @@ Components use Tailwind CSS for styling. Modify styles by:
 ### Next.js Configuration
 
 The `next.config.mjs` file includes:
-- TypeScript build error bypass (for development)
-- Image optimization settings
+- TypeScript build configuration (ignores build errors in builds)
+- Image optimization settings (unoptimized for flexibility)
 
 ### TypeScript Configuration
 
@@ -249,7 +249,8 @@ The application can be deployed to any platform that supports Next.js:
 ## 📈 Performance
 
 The dashboard is optimized for performance with:
-- Server-side rendering (SSR) for initial page load
+- React Server Components for efficient rendering
+- Static generation where possible
 - Component lazy loading
 - Optimized bundle size
 - Efficient re-rendering with React hooks
